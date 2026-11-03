@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.2.2
+
+[compare changes](https://github.com/PinLightTeam/PinLight-app-frontend/compare/v0.2.1...v0.2.2)
+
+### 🩹 Исправления
+
+- **night:** Не добавлять фонари, пока в стиле нет источника carto ([9c3f84e](https://github.com/PinLightTeam/PinLight-app-frontend/commit/9c3f84e))
+
+### ❤️ Contributors
+
+- Hell-soon <pmaks2365@gmail.com>
+
 ## v0.2.1
 
 [compare changes](https://github.com/RealTimeMap/RTM-app-frontend/compare/v0.2.0...v0.2.1)
