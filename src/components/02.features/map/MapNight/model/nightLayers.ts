@@ -2,7 +2,7 @@ import type { ExpressionSpecification, LineLayerSpecification } from 'maplibre-g
 import type { ThemeBase } from '@/components/00.shared/lib/theme'
 
 export const LIGHTS_LAYER_ID = 'night-street-lights'
-const CARTO_SOURCE = 'carto'
+export const CARTO_SOURCE = 'carto'
 
 const LIGHTS: Record<ThemeBase, { color: string, opacity: number }> = {
   light: { color: '#ffc46b', opacity: 0.55 },
