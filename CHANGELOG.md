@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.2.3
+
+[compare changes](https://github.com/PinLightTeam/PinLight-app-frontend/compare/v0.2.2...v0.2.3)
+
+### 🩹 Исправления
+
+- **map:** Вода и 3D-дома ждут источник carto ([dd34944](https://github.com/PinLightTeam/PinLight-app-frontend/commit/dd34944))
+
+### ❤️ Contributors
+
+- Hell-soon <pmaks2365@gmail.com>
+
 ## v0.2.2
 
 [compare changes](https://github.com/PinLightTeam/PinLight-app-frontend/compare/v0.2.1...v0.2.2)
