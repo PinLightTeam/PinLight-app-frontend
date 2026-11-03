@@ -6,6 +6,7 @@ import { useMapStyleBase } from '@/components/00.shared/lib/mapStyleBase'
 import { sunPosition } from '@/components/00.shared/lib/sun'
 import { useWeatherStore } from '@/components/02.features/map/Weather'
 import {
+  CARTO_SOURCE,
   createLightsLayer,
   darknessAt,
   LIGHTS_LAYER_ID,
@@ -96,6 +97,8 @@ function sync() {
     }
     return
   }
+  if (!instance.getSource(CARTO_SOURCE))
+    return
   if (!instance.getLayer(LIGHTS_LAYER_ID))
     ensureLayers(instance)
   keepOnTop(instance)
