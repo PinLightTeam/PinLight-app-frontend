@@ -94,7 +94,7 @@ function beforeId(instance: maplibregl.Map): string | undefined {
 }
 
 function ensureLayers(instance: maplibregl.Map) {
-  if (!instance.getLayer(WATER_LAYER))
+  if (!instance.getLayer(WATER_LAYER) || !instance.getSource(CARTO_SOURCE))
     return
   if (!instance.hasImage(STILL_IMAGE))
     instance.addImage(STILL_IMAGE, isIce(instance) ? drawIce() : drawStill(), { pixelRatio: PIXEL_RATIO })

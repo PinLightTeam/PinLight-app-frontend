@@ -216,7 +216,7 @@ function revealNewLayer(instance: maplibregl.Map) {
   revealPending = true
   whenMapVisible(() => {
     revealPending = false
-    if (disposed || instance.getLayer(BUILDINGS_LAYER_ID))
+    if (disposed || instance.getLayer(BUILDINGS_LAYER_ID) || !instance.getSource(SOURCE_ID))
       return
     const buildings = buildingsInView(instance)
     for (const building of buildings)
@@ -450,6 +450,8 @@ function sync() {
     }
     return
   }
+  if (!instance.getSource(SOURCE_ID))
+    return
   addLayer(instance)
 }
 
