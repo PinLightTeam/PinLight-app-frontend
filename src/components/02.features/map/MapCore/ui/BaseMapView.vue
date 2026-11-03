@@ -10,6 +10,8 @@ import { styleCity } from '@/components/02.features/map/CityDetails'
 import { buildTransformRequest, registerOfflineMapProtocol } from '@/components/02.features/map/OfflineMap'
 import { styleRoads } from '@/components/02.features/map/RoadDetails'
 import { useShareStore } from '@/components/02.features/mark/Share/model'
+import darkMatter from '../model/styles/darkMatter.json'
+import positron from '../model/styles/positron.json'
 import { onDoubleTap } from '../model/useDoubleTap'
 import 'maplibre-gl/dist/maplibre-gl.css'
 
@@ -20,9 +22,13 @@ const props = defineProps<{
 
 const emit = defineEmits<MapEmits>()
 
+/**
+ * Стили CARTO лежат у нас: по живой ссылке CARTO перешёл на схему Protomaps (источник protomaps),
+ * а дома, вода, деревья и дороги рассчитаны на схему OpenMapTiles из тайлов carto.streets/v1.
+ */
 const MAP_STYLES = {
-  dark: 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json',
-  light: 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json',
+  dark: darkMatter as maplibregl.StyleSpecification,
+  light: positron as maplibregl.StyleSpecification,
 } as const
 
 maplibregl.setWorkerUrl(maplibreWorkerUrl)
