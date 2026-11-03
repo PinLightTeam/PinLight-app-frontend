@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.2.4
+
+[compare changes](https://github.com/PinLightTeam/PinLight-app-frontend/compare/v0.2.3...v0.2.4)
+
+### 🩹 Исправления
+
+- **map:** Свои копии стилей CARTO на схеме OpenMapTiles ([afe4114](https://github.com/PinLightTeam/PinLight-app-frontend/commit/afe4114))
+
+### ❤️ Contributors
+
+- Hell-soon <pmaks2365@gmail.com>
+
 ## v0.2.3
 
 [compare changes](https://github.com/PinLightTeam/PinLight-app-frontend/compare/v0.2.2...v0.2.3)
