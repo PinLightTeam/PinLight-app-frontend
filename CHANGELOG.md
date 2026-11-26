@@ -1,6 +1,14 @@
 # Changelog
 
 
+## v0.2.5
+
+[compare changes](https://github.com/PinLightTeam/PinLight-app-frontend/compare/v0.2.4...v0.2.5)
+
+### 📖 Документация
+
+- Add frontend architecture map ([3fda101](https://github.com/PinLightTeam/PinLight-app-frontend/commit/3fda101))
+
 ## v0.2.4
 
 [compare changes](https://github.com/PinLightTeam/PinLight-app-frontend/compare/v0.2.3...v0.2.4)
